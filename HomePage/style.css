@@ -366,6 +366,5 @@
         top: 55%;
         }
         footer .form-control::placeholder {
-        color: rgba(255, 255, 255, 0.5) !important;
-        opacity: 1;
+        color:white
         }
