@@ -65,6 +65,7 @@
     background-color: var(--color-orange) !important;
     border: none !important;
 }
+
 footer .form-control::placeholder {
     color: rgba(255, 255, 255, 0.5) !important;
     opacity: 1;
