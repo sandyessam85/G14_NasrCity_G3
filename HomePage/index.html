@@ -13,44 +13,68 @@
       <section>
           <div class="container-fluid">
           <div class="top-bar">
-  <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!<a href="#">ShopNow</a></p>
-  <select>
-    <option>English</option> 
-    <option>Arabic</option>                                      
-  </select>                                      
-      </div>
+           <p>Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!<a href="#">ShopNow</a></p>
+      <select>
+       <option>English</option> 
+      <option>Arabic</option>                                      
+      </select>                                      
+            </div>
 
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Exclusive</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" >Sign Up</a>
-          </li>
-        </ul>
-        <form class="search-box" role="search">
-          <input class="form-control me-2" type="search" placeholder="What are you looking for" aria-label="Search"/>
-          <button class="btn btn-outline-success" type="submit"><img src="images/search.png" class="search-icon"></button>
-        </form>
-      <a href="#"> <img src="images/Vector (2).png" class="nav-icon"></a>
-  <a href="#"><img src="images/Cart1.png" class="nav-icon"></a>
-      </div>
-    </div>
-  </nav>
+  <nav class="navbar navbar-expand-lg bg-white border-bottom py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3 text-dark" href="#">Exclusive</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-dark" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-dark" href="../Contact/index.html">Contact</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-dark" href="../About/index.html">About</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-dark" href="../signup/signup.html">Sign Up</a>
+                    </li>
+                </ul>
+                <form class=" search-box d-flex align-items-center position-relative me-3" role="search">
+                    <input class="form-control bg-light border-0 pe-5" type="search" placeholder="What are you looking for?" aria-label="Search">
+                    <button class="btn border-0 position-absolute end-0 top-0 text-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+                <div class="d-flex align-items-center gap-3 fs-5">
+                    <a href="../wishlist/whishlist.html" class="text-dark position-relative">
+                        <i class="fa-regular fa-heart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 p-1">4</span>
+                    </a>
+                    <a href="../cart/cart.html" class="text-dark position-relative">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-danger fs-6 p-1">2</span>
+                    </a>
+                    <details class="user-dropdown">
 
+  <summary class="user-icon btn btn-danger rounded-circle p-1 d-flex align-items-center justify-content-center">
+    <i class="fa-regular fa-user text-white fs-6"></i>
+  </summary>
+
+  <div class="user-options">
+    <a href="../My Account/index.html">Manage My Account</a>
+    <a href="#">My Order</a>
+    <a href="#">My Cancellations</a>
+    <a href="#">My Reviews</a>
+    <a href="../signup/signup.html">Logout</a>
+  </div>
+
+</details>
+                </div>
+            </div>
+        </div>
+    </nav>
   <div class="main-content">
   <div class="list-group">
       <select class="list-group-item list-group-item-action">
@@ -82,7 +106,15 @@
       <a href="" class="text-white">Shop Now →</a>
       </div>
   <img src="images/iphone.png" class="iphone-img">
+<div class="dots">
+  <span></span>
+  <span></span>
+  <span class="active"></span>
+  <span></span>
+  <span></span>
   </div>
+  
+</div>
       </div>
   <div class="flash-header">
       <div>
@@ -111,15 +143,17 @@
         </div>
       </div>
   </div>
-
+  <div id="carouselExampleControls" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
   <div class="row">
   <div class="col-md-3 col-10 mx-auto">
   <div class="card" >
     <div class="product-img">
       <img src="images/playstation.png" class="card-img-top" alt="...">
       <p class="discount">-40%</p>
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+      <i class="fa-regular fa-heart heart"></i>
+       <i class="fa-regular fa-eye eye"></i>
       <button class="cart-btn">Add To Cart</button>
     </div>
   
@@ -139,8 +173,8 @@
     <div class="product-img">
   <img src="images/keyboard.png" class="keyboard-img" alt="...">
   <p class="discount">-35%</p>
-  <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+     <i class="fa-regular fa-heart heart"></i>
+      <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -159,8 +193,8 @@
     <div class="product-img">
         <img src="images/tv.png" class="card-img-top" alt="...">
         <p class="discount">-30%</p>
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+     <i class="fa-regular fa-heart heart"></i>
+<i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -179,12 +213,11 @@
       <div class="product-img">
   <img src="images/chair.png" class="card-img-top" alt="...">
   <p class="discount">-25%</p>
-      <img src="images/Fill Eye.png" class="eye" alt="...">
-    <img src="images/Vector (2).png" class="heart" alt="...">
+      <i class="fa-regular fa-heart heart"></i>
+<i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
       </div>
-
-    <div class="card-body">
+      <div class="card-body">
     <h5 class="card-text">S-Series Comfort Chair </h5>
       <p class="price">
         <span class="new-price">$375</span>
@@ -194,8 +227,44 @@
   </div>
   </div>
   </div>
+</div>
+
+</div>
+<div class="carousel-item">
+  <div class="row">
+  <div class="col-md-3 col-10 mx-auto">
+  <div class="card" >
+    <div class="product-img">
+        <img src="images/tv.png" class="card-img-top" alt="...">
+        <p class="discount">-30%</p>
+    <i class="fa-regular fa-heart heart"></i>
+     <i class="fa-regular fa-eye eye"></i>
+    <button class="cart-btn">Add To Cart</button>
+    </div>
+    <div class="card-body">
+    <h5 class="card-text">IPS LCD Gaming Monitor </h5>
+      <p class="price">
+        <span class="new-price">$370</span>
+        <span class="old-price">$400</span>
+      </p>
+        <img src="images/stars.png" class="rating-img">
   </div>
   </div>
+  </div>
+  </div>
+</div>
+  </div>
+  <button class="carousel-control-prev" type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+  <span class="carousel-control-next-icon"></span>
+</button>
 
   <a href="" class="product">View All Product</a>
   <div class="flash-header">
@@ -226,8 +295,8 @@
   <div class="card" >
     <div class="product-img">
       <img src="images/jacket.png" class="card-img-top" alt="...">
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+      <i class="fa-regular fa-heart heart"></i>
+      <i class="fa-regular fa-eye eye"></i>
       <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -244,8 +313,8 @@
   <div class="card">
     <div class="product-img">
   <img src="images/bag.png" class="card-img-top" alt="...">
-  <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+     <i class="fa-regular fa-heart heart"></i>
+     <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -263,8 +332,8 @@
   <div class="card" >
     <div class="product-img">
         <img src="images/music.png" class="card-img-top" alt="...">
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+        <i class="fa-regular fa-heart heart"></i>
+        <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -282,8 +351,8 @@
   <div class="card">
       <div class="product-img">
   <img src="images/books.png" class="card-img-top" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
-    <img src="images/Vector (2).png" class="heart" alt="...">
+            <i class="fa-regular fa-heart heart"></i>
+           <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
       </div>
     <div class="card-body">
@@ -335,8 +404,8 @@
   <div class="card" >
     <div class="product-img">
       <img src="images/choclate.png" class="card-img-top first-img" alt="...">
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+      <i class="fa-regular fa-heart heart"></i>
+      <i class="fa-regular fa-eye eye"></i>
       <button class="cart-btn">Add To Cart</button>
     </div>
   
@@ -356,8 +425,8 @@
   <div class="card camera-card">
       <div class="product-img">
   <img src="images/cameras.png" class="cameras-img " alt="...">
-  <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">   
+       <i class="fa-regular fa-heart heart"></i>
+        <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
 
@@ -377,8 +446,8 @@
   <div class="card" >
     <div class="product-img">
         <img src="images/Laptop.png" class="card-img-top" alt="...">
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+     <i class="fa-regular fa-heart heart"></i>
+     <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -396,8 +465,8 @@
   <div class="card">
       <div class="product-img">
   <img src="images/cream.png" class="card-img-top" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
-    <img src="images/Vector (2).png" class="heart" alt="...">
+      <i class="fa-regular fa-heart heart"></i>
+      <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
       </div>
 
@@ -418,8 +487,8 @@
     <div class="product-img">
       <img src="images/carss.png" class="card-img-top first-img" alt="...">
       <p class="new">New</p>
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+           <i class="fa-regular fa-heart heart"></i>
+          <i class="fa-regular fa-eye eye"></i>
       <button class="cart-btn">Add To Cart</button>
     </div>
   
@@ -443,9 +512,8 @@
   <div class="card shoes-card">
     <div class="product-img">
   <img src="images/shoes.png" class="shoes-img" alt="...">
-  <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
-      
+    <i class="fa-regular fa-heart heart"></i>
+     <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -468,8 +536,8 @@
     <div class="product-img">
         <img src="images/playstations.png" class="card-img-top" alt="...">
         <p class="new">New</p>
-      <img src="images/Vector (2).png" class="heart" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
+          <i class="fa-regular fa-heart heart"></i>
+            <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
     </div>
     <div class="card-body">
@@ -493,8 +561,8 @@
   <div class="card">
       <div class="product-img">
   <img src="images/jackets.png" class="card-img-top" alt="...">
-      <img src="images/Fill Eye.png" class="eye" alt="...">
-    <img src="images/Vector (2).png" class="heart" alt="...">
+      <i class="fa-regular fa-heart heart"></i>
+       <i class="fa-regular fa-eye eye"></i>
     <button class="cart-btn">Add To Cart</button>
       </div>
     <div class="card-body">
