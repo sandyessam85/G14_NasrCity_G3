@@ -5,7 +5,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        flex-wrap: wrap;
+     
         width: 100%;
         padding: 1%;
         }
@@ -368,3 +368,43 @@
         footer .form-control::placeholder {
         color:white
         }
+          .btn-danger{
+          background-color: #db4444;
+           border-color: #db4444;
+           margin-top: 7%;
+        }
+       #exampleInputEmail1, #exampleInputPassword1 ,#exampleInputName{
+         width: 60%;
+         margin: 5%;
+       }
+        .btn-danger-password{
+            margin-top: 7%;
+           color: #db4444 ;
+       } 
+      .create-account {
+        display: block;
+        margin-left:13%;
+        color: white;
+        background-color: #db4444;
+        border: none;
+        padding: 1%;
+        width: 50%;
+       }
+       .signup-google{
+         padding: 1%;
+        width: 50%;
+         margin-left:13%;
+         margin-top: 2%;
+       }
+       .account{
+         padding: 1%;
+        width: 50%;
+         margin-left:19%;
+         margin-top: 2%;
+       }
+       .nav-link-signup{
+        text-decoration: underline;
+        color: black;
+        margin-left: 5%;
+       }
+       
