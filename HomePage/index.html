@@ -1,21 +1,17 @@
-  <!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <title>Home-page</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
-      <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
-        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" >
-         <link rel="preconnect" href="https://fonts.googleapis.com">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  </head>
-  <body>
-     <section class="container-fluid px-0 bg-dark text-white py-2">
+</head>
+<body>
+    <section class="container-fluid px-0 bg-dark text-white py-2">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-9 col-12 text-center">
@@ -63,9 +59,9 @@
                         <a class="nav-link text-dark" href="../signup/signup.html">Sign Up</a>
                     </li>
                 </ul>
-                <form class="d-flex align-items-center relative me-3" role="search">
-                    <input class="form-control bg-light relative border-0 pe-5 search-box" type="search" placeholder="What are you looking for?" aria-label="Search">
-                    <button class="btn border-0 absolute end-0 top-0 text-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <form class="d-flex align-items-center position-relative me-3" role="search">
+                    <input class="form-control bg-light position-relative border-0 pe-5 search-box" type="search" placeholder="What are you looking for?" aria-label="Search">
+                    <button class="btn border-0 position-absolute end-0 top-0 text-dark" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <div class="d-flex align-items-center gap-3 fs-5">
                     <a href="../wishlist/whishlist.html" class="text-dark"><i class="fa-regular fa-heart"></i></a>
@@ -74,599 +70,577 @@
                         <i class="fa-solid fa-cart-shopping"></i>
                     </a>
                     <div class="dropdown">
-                    <a class="user-icon" href="#" data-bs-toggle="dropdown">
-                      <i class="fa-regular fa-user"></i>
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="../My Account/index.html">Manage My Account</a>
-                      <a class="dropdown-item" href="#">My Order</a>
-                      <a class="dropdown-item" href="#">My Cancellations</a>
-                      <a class="dropdown-item" href="#">My Reviews</a>
-                      <a class="dropdown-item" href="../signup/signup.html">Logout</a>
+                        <a class="user-icon d-inline-flex align-items-center justify-content-center text-dark text-decoration-none" href="#" data-bs-toggle="dropdown">
+                            <i class="fa-regular fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="../My Account/index.html">Manage My Account</a>
+                            <a class="dropdown-item" href="#">My Order</a>
+                            <a class="dropdown-item" href="#">My Cancellations</a>
+                            <a class="dropdown-item" href="#">My Reviews</a>
+                            <a class="dropdown-item" href="../signup/signup.html">Logout</a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="list-group">
+            <select class="list-group-item list-group-item-action">
+                <option>Woman's Fashion</option>
+                <option>Jeans</option>
+                <option>Basic Tops</option>
+            </select>
+            <select class="list-group-item list-group-item-action">
+                <option>Men's Fashion</option>
+                <option>Jeans</option>
+                <option>T-shirts</option>
+            </select> 
+            <a href="#" class="list-group-item list-group-item-action">Electronics</a>
+            <a href="#" class="list-group-item list-group-item-action">Home & Lifestyle</a>
+            <a href="#" class="list-group-item list-group-item-action">Medicine</a>
+            <a href="#" class="list-group-item list-group-item-action">Sports & Outdoor</a>
+            <a href="#" class="list-group-item list-group-item-action">Baby's & Toys</a>
+            <a href="#" class="list-group-item list-group-item-action">Groceries & Pets</a>
+            <a href="#" class="list-group-item list-group-item-action">Health & Beauty</a>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="home-banner">
+                        <div class="home-banner-text">
+                            <div class="phone-title">
+                                <i class="fa-brands fa-apple fs-2"></i>
+                                <p>iPhone 14 Series</p>
+                            </div>
+                            <h2>Up to 20% off Voucher</h2>
+                            <p class="macbook">Upgrade to the latest<br>Save more with our exclusive voucher.</p>
+                            <a href="#" class="text-white">Shop Now →</a>
+                        </div>
+                        <img src="images/iphone.jpeg" class="home-iphone-img" alt="iPhone">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="home-banner">
+                        <div class="home-banner-text">
+                            <div class="phone-title">
+                                <i class="fa-brands fa-apple fs-2"></i>
+                                <p>MacBook Pro</p>
+                            </div>
+                            <h2>Power.<br>Redefined.</h2>
+                            <p class="macbook">Save up to 15% on<br>MacBook Pro with our<br>exclusive voucher.</p>
+                            <a href="#" class="text-white">Shop Now →</a>
+                        </div>
+                        <img src="images/macbook.jpeg" class="home-macbook-img" alt="MacBook">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="home-banner">
+                        <div class="home-banner-text">
+                            <div class="phone-title">
+                                <i class="fa-brands fa-apple fs-2"></i>
+                                <p>Apple Watch</p>
+                            </div>
+                            <h2>Smarter.<br>Every Move.</h2>
+                            <p class="macbook">Stay connected, active<br>and on track every day.</p>
+                            <a href="#" class="text-white">Shop Now →</a>
+                        </div>
+                        <img src="images/smartwatch.jpeg" class="home-macbook-img" alt="Apple Watch">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section-container">
+      <div class="flash-header">
+          <div>
+              <p class="today">Today's</p>
+              <h2>Flash Sales</h2>
+          </div>
+          <div class="timer">
+              <div>
+                  <p>Days</p>
+                  <h3>03</h3>
+              </div>
+              <span class="colon">:</span>
+              <div>
+                  <p>Hours</p>
+                  <h3>23</h3>
+              </div>
+              <span class="colon">:</span>
+              <div>
+                  <p>Minutes</p>
+                  <h3>19</h3>
+              </div>
+              <span class="colon">:</span>
+              <div>
+                  <p>Seconds</p>
+                  <h3>56</h3>
+              </div>
+          </div>
+      </div>
+  
+      <div id="carouselExampleControls" class="carousel slide">
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <div class="row">
+                      <div class="col-md-3 col-10 mx-auto">
+                          <div class="card">
+                              <div class="product-img">
+                                  <img src="images/playstation.png" class="card-img-top" alt="Gamepad">
+                                  <p class="discount">-40%</p>
+                                  <i class="fa-regular fa-heart heart"></i>
+                                  <i class="fa-regular fa-eye eye"></i>
+                                  <button class="cart-btn">Add To Cart</button>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-text">HAVIT HV-G92 Gamepad.</h5>
+                                  <p class="price">
+                                      <span class="new-price">$120</span>
+                                      <span class="old-price">$160</span>
+                                  </p>
+                                  <img src="images/5 star.png" class="rating-img" alt="Rating">
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-md-3 col-10 mx-auto">
+                          <div class="card">
+                              <div class="product-img">
+                                  <img src="images/keyboard.png" class="keyboard-img" alt="Keyboard">
+                                  <p class="discount">-35%</p>
+                                  <i class="fa-regular fa-heart heart"></i>
+                                  <i class="fa-regular fa-eye eye"></i>
+                                  <button class="cart-btn">Add To Cart</button>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-text">AK-900 Wired Keyboard</h5>
+                                  <p class="price">
+                                      <span class="new-price">$960</span>
+                                      <span class="old-price">$1160</span>
+                                  </p>
+                                  <img src="images/4star.png" class="rating-img" alt="Rating">
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-md-3 col-10 mx-auto">
+                          <div class="card">
+                              <div class="product-img">
+                                  <img src="images/tv.png" class="card-img-top" alt="Monitor">
+                                  <p class="discount">-30%</p>
+                                  <i class="fa-regular fa-heart heart"></i>
+                                  <i class="fa-regular fa-eye eye"></i>
+                                  <button class="cart-btn">Add To Cart</button>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-text">IPS LCD Gaming Monitor</h5>
+                                  <p class="price">
+                                      <span class="new-price">$370</span>
+                                      <span class="old-price">$400</span>
+                                  </p>
+                                  <img src="images/stars.png" class="rating-img" alt="Rating">
+                              </div>
+                          </div>
+                      </div>
+  
+                      <div class="col-md-3 col-10 mx-auto">
+                          <div class="card">
+                              <div class="product-img">
+                                  <img src="images/chair.png" class="card-img-top" alt="Chair">
+                                  <p class="discount">-25%</p>
+                                  <i class="fa-regular fa-heart heart"></i>
+                                  <i class="fa-regular fa-eye eye"></i>
+                                  <button class="cart-btn">Add To Cart</button>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-text">S-Series Comfort Chair</h5>
+                                  <p class="price">
+                                      <span class="new-price">$375</span>
+                                      <span class="old-price">$400</span>
+                                  </p>
+                                  <img src="images/rating.png" class="rating-img" alt="Rating">
+                              </div>
+                          </div>
+                      </div>
                   </div>
               </div>
-            </div>
-        </div>
-    </nav>
-                </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-  <div class="main-content">
-  <div class="list-group">
-      <select class="list-group-item list-group-item-action">
-      <option>Woman's Fashion</option>
-      <option>Jeans</option>
-      <option>Basic Tops</option>
-      </select>
-      <select class="list-group-item list-group-item-action">
-      <option>Men's Fashion</option>
-      <option>Jeans</option>
-      <option>T-shirts</option>
-      </select> 
-  <a href="" class="list-group-item list-group-item-action">Electronics</a>
-  <a href="" class="list-group-item list-group-item-action">Home & Lifestyle</a>
-  <a href="" class="list-group-item list-group-item-action">Medicine</a>
-  <a href="" class="list-group-item list-group-item-action">Sports & Outdoor</a>
-  <a href="" class="list-group-item list-group-item-action">Baby's & Toys</a>
-  <a href="" class="list-group-item list-group-item-action">Groceries & Pets</a>
-  <a href="" class="list-group-item list-group-item-action">Health & Beauty</a>
-  </div>
-<div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true">
-    </button>
-
-    <button type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1">
-    </button>
-
-    <button type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2">
-    </button>
-
-  </div>
-
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="home-banner">
-        <div class="home-banner-text">
-          <div class="phone-title">
- <i class="fa-brands fa-apple fs-2"></i>
-            <p>iPhone 14 Series</p>
+  
+              <div class="carousel-item">
+                  <div class="row">
+                      <div class="col-md-3 col-10 mx-auto">
+                          <div class="card">
+                              <div class="product-img">
+                                  <img src="images/tv.png" class="card-img-top" alt="Monitor">
+                                  <p class="discount">-30%</p>
+                                  <i class="fa-regular fa-heart heart"></i>
+                                  <i class="fa-regular fa-eye eye"></i>
+                                  <button class="cart-btn">Add To Cart</button>
+                              </div>
+                              <div class="card-body">
+                                  <h5 class="card-text">IPS LCD Gaming Monitor</h5>
+                                  <p class="price">
+                                      <span class="new-price">$370</span>
+                                      <span class="old-price">$400</span>
+                                  </p>
+                                  <img src="images/stars.png" class="rating-img" alt="Rating">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-          <h2>Up to 20% off Voucher</h2>
-<p class="macbook">Upgrade to the latest<br>
-Save more with our exclusive voucher.</p>
-          <a href="#" class="text-white">
-            Shop Now →
-          </a>
-        </div>
-        <img src="images/iphone.jpeg" class="home-iphone-img">
-
+  
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+          </button>
       </div>
-    </div>
+  </section>
 
-    <div class="carousel-item">
-     <div class="home-banner">
-        <div class="home-banner-text">
-          <div class="phone-title">
-    <i class="fa-brands fa-apple fs-2"></i>
-            <p>MacBook Pro</p>
-          </div>
-          <h2>Power.
-            <br>Redefined.</h2>
-            <p class="macbook">Save up to 15% on<br>
-MacBook Pro with our<br>
-exclusive voucher.</p>
-          <a href="#" class="text-white">
-            Shop Now →
-          </a>
-        </div>
-        <img src="images/macbook.jpeg" class="home-macbook-img">
-      </div>
-    </div>
+    <a href="#" class="product">View All Product</a>
 
- <div class="carousel-item">
-  <div class="home-banner">
-    <div class="home-banner-text">
-      <div class="phone-title">
-        <i class="fa-brands fa-apple fs-2"></i>
-        <p>Apple Watch</p>
-      </div>
-      <h2>
-        Smarter.<br>
-        Every Move.
-      </h2>
-      <p class="macbook">
-        Stay connected, active<br>
-        and on track every day.
-      </p>
-      <a href="#" class="text-white">
-        Shop Now →
-      </a>
-    </div>
-    <img src="images/smartwatch.jpeg" class="home-macbook-img">
-  </div>
-</div>
-  </div>
-</div>
+<div class="categories-section">
+
   <div class="flash-header">
       <div>
-      <p class="today">Today's</p>
-      <h2>Flash Sales</h2>
-      </div>
-  <div class="timer">
-  <div>
-  <p>Days</p>
-      <h3>03</h3>
-  </div>
-      <span class="colon">:</span>
-  <div>
-      <p>Hours</p>
-      <h3>23</h3>
-  </div>
-  <span class="colon">:</span>
-      <div>
-    <p>Minutes</p>
-      <h3>19</h3>
-  </div>
-  <span class="colon">:</span>
-        <div>
-      <p>Seconds</p>
-        <h3>56</h3>
-        </div>
+          <p class="today">Categories</p>
+          <h2>Browse By Category</h2>
       </div>
   </div>
-  <div id="carouselExampleControls" class="carousel slide">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-  <div class="row">
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card" >
-    <div class="product-img">
-      <img src="images/playstation.png" class="card-img-top" alt="...">
-      <p class="discount">-40%</p>
-      <i class="fa-regular fa-heart heart"></i>
-       <i class="fa-regular fa-eye eye"></i>
-      <button class="cart-btn">Add To Cart</button>
-    </div>
-  
-    <div class="card-body">
-      <h5 class="card-text">HAVIT HV-G92 Gamepad.</h5>
-      <p class="price">
-        <span class="new-price">$120</span>
-        <span class="old-price">$160</span>
-      </p>
-        <img src="images/5 star.png" class="rating-img">
-    </div>
-  </div>
+
+  <div class="category-container">
+      <a href="#" class="category"><img src="images/phone.png" alt="Phone"></a>
+      <a href="#" class="category"><img src="images/computer.png" alt="Computer"></a>
+      <a href="#" class="category"><img src="images/smartwatch.png" alt="Smartwatch"></a>
+      <a href="#" class="category"><img src="images/camera.png" class="camera-img" alt="Camera"></a>
+      <a href="#" class="category"><img src="images/headphone.png" alt="Headphone"></a>
+      <a href="#" class="category"><img src="images/gaming.png" alt="Gaming"></a>
   </div>
 
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card">
-    <div class="product-img">
-  <img src="images/keyboard.png" class="keyboard-img" alt="...">
-  <p class="discount">-35%</p>
-     <i class="fa-regular fa-heart heart"></i>
-      <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">AK-900 Wired Keyboard</h5>
-      <p class="price">
-        <span class="new-price">$960</span>
-        <span class="old-price">$1160</span>
-      </p>
-        <img src="images/4star.png" class="rating-img">
-  </div>
-  </div>
-  </div>
-
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card" >
-    <div class="product-img">
-        <img src="images/tv.png" class="card-img-top" alt="...">
-        <p class="discount">-30%</p>
-     <i class="fa-regular fa-heart heart"></i>
-<i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">IPS LCD Gaming Monitor </h5>
-      <p class="price">
-        <span class="new-price">$370</span>
-        <span class="old-price">$400</span>
-      </p>
-        <img src="images/stars.png" class="rating-img">
-  </div>
-  </div>
-  </div>
-
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card">
-      <div class="product-img">
-  <img src="images/chair.png" class="card-img-top" alt="...">
-  <p class="discount">-25%</p>
-      <i class="fa-regular fa-heart heart"></i>
-<i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-      </div>
-      <div class="card-body">
-    <h5 class="card-text">S-Series Comfort Chair </h5>
-      <p class="price">
-        <span class="new-price">$375</span>
-        <span class="old-price">$400</span>
-      </p>
-        <img src="images/rating.png" class="rating-img">
-  </div>
-  </div>
-  </div>
 </div>
 
-</div>
-<div class="carousel-item">
-  <div class="row">
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card" >
-    <div class="product-img">
-        <img src="images/tv.png" class="card-img-top" alt="...">
-        <p class="discount">-30%</p>
-    <i class="fa-regular fa-heart heart"></i>
-     <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">IPS LCD Gaming Monitor </h5>
-      <p class="price">
-        <span class="new-price">$370</span>
-        <span class="old-price">$400</span>
-      </p>
-        <img src="images/stars.png" class="rating-img">
-  </div>
-  </div>
-  </div>
-  </div>
-</div>
-  </div>
-  <button class="carousel-control-prev" type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="prev">
-  <span class="carousel-control-prev-icon"></span>
-</button>
-
-<button class="carousel-control-next" type="button"
-        data-bs-target="#carouselExampleControls"
-        data-bs-slide="next">
-  <span class="carousel-control-next-icon"></span>
-</button>
-
-  <a href="" class="product">View All Product</a>
-  <div class="flash-header">
-      <div>
-      <p class="today">Categories</p>
-      <h2>Browse By Category</h2>
-      </div>
-
-      <div class="category-container">
-      <a href="" class="category"><img src="images/phone.png"></a>
-      <a href="" class="category"><img src="images/computer.png"></a>
-      <a href="" class="category"><img src="images/smartwatch.png"></a>
-      <a href="" class="category"><img src="images/camera.png" class="camera-img"></a>
-      <a href="" class="category"><img src="images/headphone.png"></a>
-      <a href="" class="category"><img src="images/gaming.png"></a>
-  </div>
-  </div>
-
-  <div class="best-selling">
-    <div class="flash-header">
-  <p class="today">This Month</p>
-      <h2>Best Selling Products</h2>
-      <a href="" class="product">View All</a>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3 col-10 mx-auto">
-  <div class="card" >
-    <div class="product-img">
-      <img src="images/jacket.png" class="card-img-top" alt="...">
-      <i class="fa-regular fa-heart heart"></i>
-      <i class="fa-regular fa-eye eye"></i>
-      <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-      <h5 class="card-text">The north coat</h5>
-      <p class="price">
-        <span class="new-price">$260</span>
-        <span class="old-price">$360</span>
-      </p>
-        <img src="images/5 star.png" class="rating-img">
-    </div>
-  </div>
-  </div>
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card">
-    <div class="product-img">
-  <img src="images/bag.png" class="card-img-top" alt="...">
-     <i class="fa-regular fa-heart heart"></i>
-     <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">Gucci duffle bag</h5>
-      <p class="price">
-        <span class="new-price">$960</span>
-        <span class="old-price">$1160</span>
-      </p>
-        <img src="images/4star.png" class="rating-img">
-  </div>
-  </div>
-  </div>
-
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card" >
-    <div class="product-img">
-        <img src="images/music.png" class="card-img-top" alt="...">
-        <i class="fa-regular fa-heart heart"></i>
-        <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">RGB liquid CPU Cooler </h5>
-      <p class="price">
-        <span class="new-price">$160</span>
-        <span class="old-price">$170</span>
-      </p>
-        <img src="images/stars.png" class="rating-img">
-    </div>
-  </div>
-  </div>
-
-  <div class="col-md-3 col-10 mx-auto">
-  <div class="card">
-      <div class="product-img">
-  <img src="images/books.png" class="card-img-top" alt="...">
-            <i class="fa-regular fa-heart heart"></i>
-           <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-      </div>
-    <div class="card-body">
-    <h5 class="card-text">Small BookSelf </h5>
-      <p class="price">
-        <span class="new-price">$360</span>    
-      </p>
-        <img src="images/rating.png" class="rating-img">
-  </div>
-  </div>
-  </div> 
-  </div>
-
-  <div class="banner-jbl">
-  <div class="banner-text">
-      <p>Categories</p>
-      <h2>Enhance Your Music Experience</h2>
-      <div class="time-circles">
-        <div class="circle">
-          <h5>23</h5>
-          <p>Hours</p>
+    <div class="best-selling">
+        <div class="flash-header">
+            <div>
+                <p class="today">This Month</p>
+                <h2>Best Selling Products</h2>
+            </div>
+            <a href="#" class="product">View All</a>
         </div>
-        <div class="circle">
-          <h5>05</h5>
-          <p>Days</p>
+
+        <div class="row">
+            <div class="col-md-3 col-10 mx-auto">
+                <div class="card">
+                    <div class="product-img">
+                        <img src="images/jacket.png" class="card-img-top" alt="Coat">
+                        <i class="fa-regular fa-heart heart"></i>
+                        <i class="fa-regular fa-eye eye"></i>
+                        <button class="cart-btn">Add To Cart</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text">The north coat</h5>
+                        <p class="price">
+                            <span class="new-price">$260</span>
+                            <span class="old-price">$360</span>
+                        </p>
+                        <img src="images/5 star.png" class="rating-img" alt="Rating">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-10 mx-auto">
+                <div class="card">
+                    <div class="product-img">
+                        <img src="images/bag.png" class="card-img-top" alt="Bag">
+                        <i class="fa-regular fa-heart heart"></i>
+                        <i class="fa-regular fa-eye eye"></i>
+                        <button class="cart-btn">Add To Cart</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text">Gucci duffle bag</h5>
+                        <p class="price">
+                            <span class="new-price">$960</span>
+                            <span class="old-price">$1160</span>
+                        </p>
+                        <img src="images/4star.png" class="rating-img" alt="Rating">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-10 mx-auto">
+                <div class="card">
+                    <div class="product-img">
+                        <img src="images/music.png" class="card-img-top" alt="Cooler">
+                        <i class="fa-regular fa-heart heart"></i>
+                        <i class="fa-regular fa-eye eye"></i>
+                        <button class="cart-btn">Add To Cart</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text">RGB liquid CPU Cooler</h5>
+                        <p class="price">
+                            <span class="new-price">$160</span>
+                            <span class="old-price">$170</span>
+                        </p>
+                        <img src="images/stars.png" class="rating-img" alt="Rating">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-10 mx-auto">
+                <div class="card">
+                    <div class="product-img">
+                        <img src="images/books.png" class="card-img-top" alt="Bookshelf">
+                        <i class="fa-regular fa-heart heart"></i>
+                        <i class="fa-regular fa-eye eye"></i>
+                        <button class="cart-btn">Add To Cart</button>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-text">Small Bookshelf</h5>
+                        <p class="price">
+                            <span class="new-price">$360</span>
+                        </p>
+                        <img src="images/rating.png" class="rating-img" alt="Rating">
+                    </div>
+                </div>
+            </div> 
         </div>
-          <div class="circle">
-          <h5>59</h5>
-          <p>Minutes</p>
-          </div>
-          <div class="circle">
-          <h5>35</h5>
-          <p>Seconds</p>
-      </div>
-      </div>
-      <a href="">Buy Now!</a>
-  <img src="images/jbl.png" class="iphone-img">
-  </div>
-      </div>
-
-      <div class="best-selling">
-    <div class="flash-header">
-  <p class="today">Our Products</p>
-      <h2>Explore Our Products</h2>
-    </div>
-    <div class="explore-product">
-  <div class="row g-2">
-    <div class="col-md-3 col-12 first-card">
-  <div class="card" >
-    <div class="product-img">
-      <img src="images/choclate.png" class="card-img-top first-img" alt="...">
-      <i class="fa-regular fa-heart heart"></i>
-      <i class="fa-regular fa-eye eye"></i>
-      <button class="cart-btn">Add To Cart</button>
-    </div>
-  
-    <div class="card-body">
-      <h5 class="card-text">Breed Dry Dog Food</h5>
-      <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$100</span>
-      </p>
-        <img src="images/3 star.png" class="rating-img">
-      </div>
-    </div>
-  </div>
-  </div>
-
-      <div class="col-md-3 col-12">
-  <div class="card camera-card">
-      <div class="product-img">
-  <img src="images/cameras.png" class="cameras-img " alt="...">
-       <i class="fa-regular fa-heart heart"></i>
-        <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
     </div>
 
-    <div class="card-body">
-    <h5 class="card-text">CANON EOS DSLR Camera</h5>
-    <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$360</span>
-      </p>
-        <img src="images/4star.png" class="rating-img">
+    <div class="banner-jbl">
+        <div class="banner-text">
+            <p>Categories</p>
+            <h2>Enhance Your Music Experience</h2>
+            <div class="time-circles">
+                <div class="circle">
+                    <h5>23</h5>
+                    <p>Hours</p>
+                </div>
+                <div class="circle">
+                    <h5>05</h5>
+                    <p>Days</p>
+                </div>
+                <div class="circle">
+                    <h5>59</h5>
+                    <p>Minutes</p>
+                </div>
+                <div class="circle">
+                    <h5>35</h5>
+                    <p>Seconds</p>
+                </div>
+            </div>
+            <a href="#">Buy Now!</a>
+            <img src="images/jbl.png" class="iphone-img" alt="JBL Speaker">
+        </div>
     </div>
-  </div>
-  </div>
-      </div>
 
-  <div class="col-md-3 col-12">
-  <div class="card" >
-    <div class="product-img">
-        <img src="images/Laptop.png" class="card-img-top" alt="...">
-     <i class="fa-regular fa-heart heart"></i>
-     <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">ASUS FHD Gaming Laptop</h5>
-    <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$700</span>
-      </p>
-        <img src="images/5 star.png" class="rating-img">
-    </div>
-  </div>
-      </div>
-  </div>
-  <div class="col-md-3 col-12">
-  <div class="card">
-      <div class="product-img">
-  <img src="images/cream.png" class="card-img-top" alt="...">
-      <i class="fa-regular fa-heart heart"></i>
-      <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-      </div>
+    <div class="best-selling">
+        <div class="flash-header">
+            <div>
+                <p class="today">Our Products</p>
+                <h2>Explore Our Products</h2>
+            </div>
+        </div>
+        <div class="explore-product">
+            <div class="row g-2">
+                <div class="col-md-3 col-12 first-card">
+                    <div class="card">
+                        <div class="product-img">
+                            <img src="images/choclate.png" class="card-img-top first-img" alt="Dog Food">
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">Breed Dry Dog Food</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$100</span>
+                                </p>
+                                <img src="images/3 star.png" class="rating-img" alt="Rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="card-body">
-    <h5 class="card-text">S-Series Comfort Chair </h5>
-      <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$500</span>
-      </p>
-        <img src="images/4star.png" class="rating-img">
-      </div>
-  </div>
-  </div>
-  </div>
+                <div class="col-md-3 col-12">
+                    <div class="card camera-card">
+                        <div class="product-img">
+                            <img src="images/cameras.png" class="cameras-img" alt="Camera">
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">CANON EOS DSLR Camera</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$360</span>
+                                </p>
+                                <img src="images/4star.png" class="rating-img" alt="Rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <div class="col-md-3 col-12 first-card">
-  <div class="card">
-    <div class="product-img">
-      <img src="images/carss.png" class="card-img-top first-img" alt="...">
-      <p class="new">New</p>
-           <i class="fa-regular fa-heart heart"></i>
-          <i class="fa-regular fa-eye eye"></i>
-      <button class="cart-btn">Add To Cart</button>
-    </div>
-  
-    <div class="card-body">
-      <h5 class="card-text">Kids Electric Car</h5>
-      <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$960</span>
-      </p>
-        <img src="images/5 star.png" class="rating-img">
-      </div>
-    <div class="colors">
-      <button class="color-circle red"></button>
-      <button class="color-circle yellow"></button>
-  </div>
-    </div>
-  </div>
-  </div>
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="product-img">
+                            <img src="images/Laptop.png" class="card-img-top" alt="Laptop">
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">ASUS FHD Gaming Laptop</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$700</span>
+                                </p>
+                                <img src="images/5 star.png" class="rating-img" alt="Rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="col-md-3 col-12">
-  <div class="card shoes-card">
-    <div class="product-img">
-  <img src="images/shoes.png" class="shoes-img" alt="...">
-    <i class="fa-regular fa-heart heart"></i>
-     <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">Jr. Zoom Soccer Cleats</h5>
-    <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$1160</span>
-      </p>
-        <img src="images/5 star.png" class="rating-img">
-    </div>
-  <div class="colors">
-      <button class="color-circle red"></button>
-      <button class="color-circle yellow"></button>
-  </div>
-  </div>
-  </div>
-  </div>
-  <div class="col-md-3 col-12">
-  <div class="card" >
-    <div class="product-img">
-        <img src="images/playstations.png" class="card-img-top" alt="...">
-        <p class="new">New</p>
-          <i class="fa-regular fa-heart heart"></i>
-            <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-    </div>
-    <div class="card-body">
-    <h5 class="card-text">GP11 Shooter USB Gamepad</h5>
-    <div class="price-rating">
-  <p class="price">
-        <span class="new-price">$660</span>
-      </p>
-        <img src="images/rating.png" class="rating-img">
-    </div>
-    
-    <div class="colors">
-      <button class="color-circle red"></button>
-      <button class="color-circle yellow"></button>
-  </div>
-  </div>
-  </div>
-  </div>
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="product-img">
+                            <img src="images/cream.png" class="card-img-top" alt="Product">
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">S-Series Comfort Chair</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$500</span>
+                                </p>
+                                <img src="images/4star.png" class="rating-img" alt="Rating">
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="col-md-3 col-12">
-  <div class="card">
-      <div class="product-img">
-  <img src="images/jackets.png" class="card-img-top" alt="...">
-      <i class="fa-regular fa-heart heart"></i>
-       <i class="fa-regular fa-eye eye"></i>
-    <button class="cart-btn">Add To Cart</button>
-      </div>
-    <div class="card-body">
-    <h5 class="card-text">Quilted Satin Jacket </h5>
-    <div class="price-rating">
-    <p class="price">
-        <span class="new-price">$660</span>
-      </p>
-        <img src="images/rating.png" class="rating-img">
-    </div>
-    
-  <div class="colors">
-      <button class="color-circle red"></button>
-      <button class="color-circle yellow"></button>
-  </div>
-  </div>
-  </div>
-  </div> 
-  </div>
+                <div class="col-md-3 col-12 first-card">
+                    <div class="card">
+                        <div class="product-img">
+                            <img src="images/carss.png" class="card-img-top first-img" alt="Electric Car">
+                            <p class="new">New</p>
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">Kids Electric Car</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$960</span>
+                                </p>
+                                <img src="images/5 star.png" class="rating-img" alt="Rating">
+                            </div>
+                            <div class="colors">
+                                <button class="color-circle red"></button>
+                                <button class="color-circle yellow"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-  <a href="" class="product-card">View All Product</a>
+                <div class="col-md-3 col-12">
+                    <div class="card shoes-card">
+                        <div class="product-img">
+                            <img src="images/shoes.png" class="shoes-img" alt="Soccer Cleats">
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">Jr. Zoom Soccer Cleats</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$1160</span>
+                                </p>
+                                <img src="images/5 star.png" class="rating-img" alt="Rating">
+                            </div>
+                            <div class="colors">
+                                <button class="color-circle red"></button>
+                                <button class="color-circle yellow"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="product-img">
+                            <img src="images/playstations.png" class="card-img-top" alt="Gamepad">
+                            <p class="new">New</p>
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">GP11 Shooter USB Gamepad</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$660</span>
+                                </p>
+                                <img src="images/rating.png" class="rating-img" alt="Rating">
+                            </div>
+                            <div class="colors">
+                                <button class="color-circle red"></button>
+                                <button class="color-circle yellow"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-12">
+                    <div class="card">
+                        <div class="product-img">
+                            <img src="images/jackets.png" class="card-img-top" alt="Jacket">
+                            <i class="fa-regular fa-heart heart"></i>
+                            <i class="fa-regular fa-eye eye"></i>
+                            <button class="cart-btn">Add To Cart</button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-text">Quilted Satin Jacket</h5>
+                            <div class="price-rating">
+                                <p class="price">
+                                    <span class="new-price">$660</span>
+                                </p>
+                                <img src="images/rating.png" class="rating-img" alt="Rating">
+                            </div>
+                            <div class="colors">
+                                <button class="color-circle red"></button>
+                                <button class="color-circle yellow"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+
+            <a href="#" class="product-card">View All Product</a>
+        </div>
+    </div>
+
+    <a href="" class="product-card">View All Product</a>
   <div class="best-selling">
     <div class="flash-header">
   <p class="today">Featured</p>
@@ -720,34 +694,35 @@ exclusive voucher.</p>
   </div>
   </div>
 
-  <div class="d-flex justify-content-center text-center mb-5 mt-5">
-    <div class="customer-serviec mx-4">
-    <img src="images/Headphone (2).png">
-    <h5>FREE AND FAST DELIVERY</h5>
-    <p>Free delivery for all orders over $140</p>
-    </div>
-    <div class="customer-serviec  mx-4">
-      <img src="images/truck.png" >
-      <h5>24/7 CUSTOMER SERVICE</h5>
-      <p>Friendly 24/7 customer support</p>
+
+    <div class="d-flex justify-content-center text-center mb-5 mt-5">
+        <div class="customer-serviec mx-4">
+            <img src="images/Headphone (2).png" alt="Service">
+            <h5>FREE AND FAST DELIVERY</h5>
+            <p>Free delivery for all orders over $140</p>
+        </div>
+        <div class="customer-serviec mx-4">
+            <img src="images/truck.png" alt="Service">
+            <h5>24/7 CUSTOMER SERVICE</h5>
+            <p>Friendly 24/7 customer support</p>
+        </div>
+        <div class="customer-serviec mx-4">
+            <img src="images/Services.png" alt="Service">
+            <h5>MONEY BACK GUARANTEE</h5>
+            <p>We return money within 30 days</p>
+        </div>
     </div>
 
-    <div class="customer-serviec mx-4">
-      <img src="images/Services.png">
-      <h5>MONEY BACK GUARANTEE</h5>
-      <p>We return money within 30 days</p>
-    </div>
-  </div>
-  <footer class="bg-dark text-white pt-5 pb-3">
+    <footer class="bg-dark text-white pt-5 pb-3">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 col-12 mb-4">
                     <h3 class="fw-bold mb-3">Exclusive</h3>
                     <h5 class="mb-3">Subscribe</h5>
                     <p class="text-white-50">Get 10% off your first order</p>
-                    <div class="relative">
+                    <div class="position-relative">
                         <input type="email" class="form-control bg-transparent text-white border-white pe-5" placeholder="Enter your email">
-                        <button class="btn text-white absolute end-0 top-0 border-0"><i class="fa-solid fa-paper-plane"></i></button>
+                        <button class="btn text-white position-absolute end-0 top-0 border-0"><i class="fa-solid fa-paper-plane"></i></button>
                     </div>
                 </div>
                 <div class="col-md-3 col-12 mb-4">
@@ -798,8 +773,6 @@ exclusive voucher.</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
