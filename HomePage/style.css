@@ -563,13 +563,15 @@
 }
 
 footer .form-control::placeholder {
-  color: rgb(194, 189, 189);
+  color: rgb(91, 89, 89);
+  opacity: 0.9;
 }
 
 .btn-danger {
   background-color: #db4444;
   border-color: #db4444;
   margin-top: 7%;
+  margin-left: 18%;
 }
 
 #exampleInputEmail1, #exampleInputPassword1, #exampleInputName {
@@ -603,4 +605,10 @@ footer .form-control::placeholder {
   text-decoration: underline;
   color: black;
   margin-left: 5%;
+}
+.g-4, .gy-4 {
+  --bs-gutter-y: -1.0rem;
+}
+.g-4, .gx-4 {
+  --bs-gutter-x: 1.5rem;
 }
